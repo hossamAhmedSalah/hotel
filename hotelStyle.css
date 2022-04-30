@@ -7,54 +7,56 @@
     margin: 0;
     padding: 0;
 }
-
-
-.header{
-    display:  flex;
-    justify-content: space-between;
-    padding: 5px 10px;
-    width: 100%;
-    height: 15%;
-    position: fixed;
-    z-index: 999;
-    align-items: center;
-    background-color: #0067B3;
-    font-weight: 600;
-    border-radius: 15px;
+#logo{
+    margin-left: 10px;
     
 }
-.header h2{
-    font-size: 2em;
-    font-weight: 900;
-    font-family:cursive;
-    background-color: #FFD53D;
-    padding: 8px;
-    border-radius: 15px;
-
-   
-}
-.nav-bar{
-   
+.header{
     display: flex;
-    list-style-type: none;
-    padding: 10px;
-    margin: 2px 10px;
-    justify-content: space-between;
-   font-size: 1.3em;
-   border-radius: 15px;
-   margin-bottom: 2px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #144da3;
+    color: #FFD53D;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.7s ease;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    
+   
+    
+
 }
-.nav-bar a{
-    margin-left: 10px;
-    padding: 10px;
-    color:   #FFD53D  ;
-    border-radius: 10px;  
+.header a{
+    color: #FFD53D;
+    padding: 20px;
+    font-size: 1.2em;
 }
-.nav-bar a:hover{
-    color:  #0067B3;
-    border-radius: 15px;
-    background-color: #FFD53D;
+.header a:hover{
+  color: #fff;
+  text-shadow: 2px 2px 8px #FFD53D;
+ 
+ 
 }
+.icon-style{
+    font-size: 2em;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffd53d;
+    border: none;
+}
+
+#home{
+    padding-left: 40px;
+}
+.dropdown-menu{
+    display: none;
+}
+
 h3{
     padding: 10px;
 }
@@ -100,6 +102,7 @@ section{
 .img-cont button i{
     font-size: 5.1em;
 }
+
 .bookHotel{
     display: flex;
     padding: 14px;
@@ -110,11 +113,16 @@ section{
     
 }
 .bookHotel input{
-    padding-left: 3px ;
     
+   padding: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: none;
 }
 #searchotel{
-  margin-top: 10px;
+ margin-left: 562px;
+ padding: 11px 152px;
+  margin-top: 15px;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 5px;
@@ -124,7 +132,7 @@ section{
   background-color:  #40B0DF ;
   cursor: pointer;
   position: relative;
-  left: 503px;
+ 
 }
 .bestOffers{
    display: flex;
@@ -155,6 +163,10 @@ section{
 .reviews{
     background-image: linear-gradient(240deg, #03171a, #0080b3);
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-between;
     
 }
 .recontainer{
@@ -177,6 +189,10 @@ section{
     background-color: #007db3;
     border: #03171a;
     color: #FFD53D;
+}
+.recontainer{
+    width: 100%;
+    height: 600px;
 }
 .recontainer:hover{
     background-color: #011019;
@@ -218,4 +234,122 @@ section{
     flex-direction: column-reverse;
     justify-content: flex-start;
 
+}
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+.fakeHotel{
+    width: 400px;
+   min-height: 250px;
+    border: 1px solid var(--font-color-old) ;
+    border-radius: 10px;
+    background-color: var(--light-second-color);
+    margin: 20px;
+}
+.fakeHotel img{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 20px;
+   border: 3px double var(--light-main-color);
+}
+.results{
+   visibility:hidden;
+   height: 0;
+   margin-top: 10px;
+  
+}
+#hideSearch{
+ margin-left: 32px;
+ padding: 11px 152px;
+  margin-top: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #40B0DF;
+  border-radius: 15px;
+  background-color:  #40B0DF ;
+  cursor: pointer;
+  position: relative;
+ 
+}
+#show{
+    margin-left: 32px;
+ padding: 11px 152px;
+  margin-top: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #40B0DF;
+  border-radius: 15px;
+  background-color:  #40B0DF ;
+  cursor: pointer;
+  position: relative;
+}
+#starsRating{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+#starsRating button{
+  background-color: black;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 1.7ems;
+}
+#starsRating button:hover{
+    background-color: silver;
+}
+footer{
+    margin-top: 40px;
+    background-color: #144da3;
+    padding-bottom: 80px;
+    border: 1px solid #FFD53D;
+   
+
+}
+.footerContainer{
+    width: 100%;
+    height: 350px;
+    color: #ffd53d;
+    display: flex;
+    justify-content: space-between;
+}
+.footerContainer .footerTeam{
+    flex-direction: column;
+    display: flex;
+    margin: 40px;
+}
+.footerContainer .footerTeam h3{
+    margin-bottom: 30px;
+}
+
+.footerContainer .footerAbout{
+    flex-direction: column;
+    display: flex;
+    margin: 40px;
+}
+.footerContainer .footercopyr{
+    margin: 40px;
+    font-weight: 600;
+    font-size: 35px;
+}
+.footerContainer a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: #FFD53D;
+    font-weight: 600;
+}
+.footerAbout a{
+    padding-top: 14px;
+    font-weight: 600;
+    font-size: 21px;
 }
